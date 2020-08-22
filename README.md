@@ -37,3 +37,10 @@ see: http://localhost/api/sample/hello
 docker exec -it proreq-web-client bash -c "cd /opt/src/app && yarn build"
 ```
 see: http://localhost/#/
+
+## mysql
+```
+docker exec -it proreq-web-mysql bash
+mysql -uroot -p
+Enter password: [MYSQL_ROOT_PASSWORD]
+```
