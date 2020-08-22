@@ -1,4 +1,4 @@
-# laravel-svelte-starter
+# proreq-web-starter
 
 - PHP 7.2
 - Laravel 7.24
@@ -8,7 +8,7 @@
 ## set environment
 ./docker/.env
 ```
-COMPOSE_PROJECT_NAME=laravel-svelte
+COMPOSE_PROJECT_NAME=proreq-web
 MYSQL_ROOT_PASSWORD=
 MYSQL_USER=
 MYSQL_PASSWORD=
@@ -20,12 +20,12 @@ docker-compose build
 docker-compose up -d
 
 # larvel
-docker exec -it laravel-svelte-backend bash
+docker exec -it proreq-web-backend bash
 cd app
 composer install
 
 # svelte
-docker exec -it laravel-svelte-client bash
+docker exec -it proreq-web-client bash
 cd app
 yarn
 ```
@@ -34,6 +34,6 @@ see: http://localhost/api/sample/hello
 
 ## svelte start
 ```
-docker exec -it laravel-svelte-client bash -c "cd /opt/src/app && yarn build"
+docker exec -it proreq-web-client bash -c "cd /opt/src/app && yarn build"
 ```
 see: http://localhost/#/
